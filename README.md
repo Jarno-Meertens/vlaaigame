@@ -1,10 +1,10 @@
-# Vlaai Bargaining Game
+# Project reward Bargaining Game
 
-A web-based implementation of a two-player bargaining game centered around splitting a traditional Limburg vlaai (pie), with optional AI assistance for negotiation strategies.
+A web-based implementation of a two-player bargaining game centered around splitting a the amount of work invested in a project, with optional AI assistance for negotiation strategies.
 
 ## Overview
 
-This game implements a classic bargaining scenario where two players need to agree on how to split a vlaai. Players take turns making offers and responding to them, with the goal of reaching a mutually acceptable agreement.
+This game implements a classic bargaining scenario where two players need to agree on how to split a project rewards. Players take turns making offers and responding to them, with the goal of reaching a mutually acceptable agreement.
 
 ## Quick Start (GitHub Codespace)
 
@@ -16,14 +16,14 @@ This game implements a classic bargaining scenario where two players need to agr
 
 ## Game Rules
 
-1. The game starts with a vlaai that needs to be split (100%)
+1. The game starts with a project reward that needs to be split (100%)
 2. Players take turns:
-   - The offering player proposes how to split the vlaai (what percentage they want)
+   - The offering player proposes how to split the reward (what percentage they want)
    - The responding player can either accept or reject the offer
    - If rejected, the responding player becomes the offering player for the next round
 3. The game ends when either:
    - A player accepts an offer (both players get their agreed-upon percentages)
-   - The maximum number of rounds (3) is reached (neither player gets any vlaai)
+   - The maximum number of rounds (6) is reached (neither player gets any reward)
 
 ## Features
 
@@ -42,7 +42,6 @@ This game implements a classic bargaining scenario where two players need to agr
 2. When enabled, you can ask questions about:
    - Game rules and mechanics
    - Negotiation strategies
-   - Traditional Limburg vlaai
 3. The AI's state (enabled/disabled) persists between sessions
 4. For control group experiments, simply disable the AI assistant
 
