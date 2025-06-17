@@ -21,6 +21,13 @@ body {
     height: 100vh;
 }
 
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* optional: centers them horizontally */
+    gap: 200px; /* space between them */
+}
+
 /* Game Section Styles */
 .game-section {
     flex: 1;
@@ -224,6 +231,20 @@ input[type="number"] {
     min-width: 500px;
 }
 
+.chat-toggle-group {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Use row if you want them side by side */
+    gap: 10px;
+    z-index: 1000;
+}
+
 .chat-section.hidden {
     flex: 0;
     padding: 0;
@@ -245,16 +266,12 @@ input[type="number"] {
 .chat-toggle {
     display: flex;
     align-items: center;
-    cursor: pointer;
-    user-select: none;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    gap: 8px;
+    font-size: 16px;
+    background: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .chat-toggle input[type="checkbox"] {
